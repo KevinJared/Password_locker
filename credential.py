@@ -7,13 +7,7 @@ class Credential:
 
     def __init__(self, first_name, last_name, number, email):
 
-        def save_credential(self):
-            '''
-            save_credential method saves credential objects into credential_list
-            '''
-
-        Credential.credential_list.append(self)
-
+ 
         '''
         __init__ method that helps us define properties for our objects.
 
