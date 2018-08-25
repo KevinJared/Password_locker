@@ -21,10 +21,20 @@ class Credential:
         self.last_name = last_name
         self.number = number
         self.email = email
-        
+
+# save credential 
     def save_credential(self):
         '''
         save_credential method saves credential objects into credential_list
         '''
 
         Credential.credential_list.append(self)
+        
+# delete credential
+    def delete_credential(self):
+
+        '''
+        delete_credential method deletes a saved credential from the credential_list
+        '''
+
+        Credential.credential_list.remove(self)
