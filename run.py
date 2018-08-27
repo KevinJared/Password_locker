@@ -52,7 +52,7 @@ def main():
     print('\n')
 
     while True:
-        print("Use these short codes : cc - create a new credential, dc - display credentials, fc -find a credential, ex -exit the credential list ")
+        print("Use these short codes : cc - create a new credential, dc - display credentials, ex -exit the credential list ")
 
         short_code = input().lower()
 
@@ -94,20 +94,6 @@ def main():
                 print("You dont have any credentials saved yet")
                 print('\n')
 
-        elif short_code == 'fc':
-
-            print("Enter the email you want to search for")
-
-            search_email= input()
-            if check_existing_credentials(search_email):
-                search_credential = find_credential(search_email)
-                print(f"{search_credential.first_name} {search_credential.last_name}")
-                print('-' * 20)
-
-                print(f"Last name.......{search_credential.f_name}")
-                print(f"First name.......{search_credential.password}")
-            else:
-                print("That credential does not exist")
 
         elif short_code == "ex":
             print("See you soon ..")
