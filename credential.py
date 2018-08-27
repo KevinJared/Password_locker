@@ -37,21 +37,6 @@ class Credential:
 
         Credential.credential_list.remove(self)
 
-    # @classmethod
-    # def find_by_password(cls, password):
-    #     '''
-    #     Method that takes in a password and returns a credential that matches that password.
-
-    #     Args:
-    #         password:  password to search for
-    #     Returns :
-    #         credential of person that matches the password.
-    #     '''
-
-    #     for credential in cls.credential_list:
-    #         if credential.password == password:
-    #             return credential
-
     @classmethod
     def credential_exist(cls, password):
         '''
