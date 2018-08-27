@@ -9,6 +9,7 @@ Password locker is an application where a user can
 * Delete credentials
 * Copy and paste credentials
 
+Note: This is an academic project.
 ## Setup
 # First clone this repo:
 
