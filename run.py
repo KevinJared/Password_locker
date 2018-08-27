@@ -1,4 +1,5 @@
 #!/usr/bin/env python3.6
+from termcolor import colored, cprint
 from credential import Credential
 
 print('''
@@ -6,7 +7,7 @@ print('''
  | |\/| | / _ \  | ||  \| | | |\/| |  _| |  \| | | | |
  | |  | |/ ___ \ | || |\  | | |  | | |___| |\  | |_| |
  |_|  |_/_/   \_|___|_| \_| |_|  |_|_____|_| \_|\___/
-          ''')
+        ''') 
           
 def create_credential(fname, lname, password, email):
     '''
@@ -54,7 +55,7 @@ def display_credentials():
 def main():
     print("Hey Welcome to your password locker. What is your name?")
     user_name = input()
-    print(f"Hello {user_name}. what would you like to do?", 'green')
+    print(f"Hello {user_name}. what would you like to do?")
     print('\n')
 
     while True:
@@ -67,29 +68,30 @@ def main():
             print("-"*50)
             print("-"*50)
 
-            print ("First name ....")
+            print ("First name :")
             f_name = input()
 
-            print("Last name ...")
+            print("Last name :")
             l_name = input()
 
-            print("password ...")
+            print("password :")
             p_word = input()
 
-            print("Email address ...")
+            print("Email address :")
             e_address = input()
 
             # create and save new credential.
             save_credentials(create_credential(
                 f_name, l_name, p_word, e_address))
             print ('\n')
+            print(colored('Success !..', 'yellow'))
             print(f"New credential {f_name} {l_name} created")
             print ('\n')
 
         elif short_code == 'dc':
 
             if display_credentials():
-                print("This is a list of all your credentials")
+                print(colored('This is a list of all your credentials', 'green'))
                 print('\n')
 
                 for credential in display_credentials():
@@ -98,12 +100,12 @@ def main():
                 print('\n')
             else:
                 print('\n')
-                print("You dont have any credentials saved yet")
+                print(colored('You dont have any credentials saved yet', 'red'))
                 print('\n')
 
 
         elif short_code == "ex":
-            print("See you soon ..")
+            print(colored('See you soon ..', 'magenta'))
             break
         else:
             print("Short code used is not recognised")
