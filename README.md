@@ -1,5 +1,5 @@
 # PASSWORD LOCKER
-#### This is an application that lets us create, generate and store passwords for various accounts. 25/08/2018
+#### This is an application that lets a user create, generate and store passwords for various accounts. 25/08/2018
 #### By **Kevin Jared**
 # Description
 Password locker is an application where a user can
