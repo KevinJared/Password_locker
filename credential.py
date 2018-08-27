@@ -21,6 +21,7 @@ class Credential:
         self.password = password
         self.email = email
 
+
 # save credential
     def save_credential(self):
         '''

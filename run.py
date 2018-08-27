@@ -1,7 +1,13 @@
 #!/usr/bin/env python3.6
 from credential import Credential
 
-
+print('''
+ |  \/  |  / \  |_ _| \ | | |  \/  | ____| \ | | | | |
+ | |\/| | / _ \  | ||  \| | | |\/| |  _| |  \| | | | |
+ | |  | |/ ___ \ | || |\  | | |  | | |___| |\  | |_| |
+ |_|  |_/_/   \_|___|_| \_| |_|  |_|_____|_| \_|\___/
+          ''')
+          
 def create_credential(fname, lname, password, email):
     '''
     Function to create a new credential
@@ -48,7 +54,7 @@ def display_credentials():
 def main():
     print("Hey Welcome to your password locker. What is your name?")
     user_name = input()
-    print(f"Hello {user_name}. what would you like to do?")
+    print(f"Hello {user_name}. what would you like to do?", 'green')
     print('\n')
 
     while True:
@@ -58,7 +64,8 @@ def main():
 
         if short_code == 'cc':
             print("New credential")
-            print("-"*10)
+            print("-"*50)
+            print("-"*50)
 
             print ("First name ....")
             f_name = input()
@@ -99,7 +106,8 @@ def main():
             print("See you soon ..")
             break
         else:
-            print("Please use the short codes provided")
+            print("Short code used is not recognised")
+            print("Try again")
 
 
 if __name__ == '__main__':
