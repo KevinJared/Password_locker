@@ -1,7 +1,6 @@
 import unittest
 from credential import Credential
 
-
 class TestCredential(unittest.TestCase):
     def tearDown(self):
         '''
