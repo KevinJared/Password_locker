@@ -1,7 +1,7 @@
 # PASSWORD LOCKER
 #### This is an application that lets us create, generate and store passwords for various accounts. 25/08/2018
 #### By **Kevin Jared**
-## Description
+# Description
 Password locker is an application where a user can
 * Create an account
 * Generate and store credentials
@@ -10,20 +10,20 @@ Password locker is an application where a user can
 * Copy and paste credentials
 
 Note: This is an academic project.
-## Setup
-# First clone this repo:
+# Setup
+## First clone this repo:
 
 * git clone https://github.com/KevinJared/Password_locker.git
-# navigate to the repo on your terminal
+## Navigate to the repo on your terminal
 cd Pass-Locker
-# Running the code
+## Running the code
 
 * ./run.py
 
 ## Technologies Used
-python
+Python
 ## Support and contact details
-for any questions please feel free to reach out to me through
+For any questions please feel free to reach out to me through
 * kevinjaredkip@gmail.com
 ### License
 * This project is licensed under the MIT Open Source license, please refer to Licence.md for more info
