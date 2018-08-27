@@ -46,7 +46,7 @@ def display_credentials():
 
 
 def main():
-    print("Hello Welcome to your credential list. What is your name?")
+    print("Hey Welcome to your password locker. What is your name?")
     user_name = input()
     print(f"Hello {user_name}. what would you like to do?")
     print('\n')
@@ -82,7 +82,7 @@ def main():
         elif short_code == 'dc':
 
             if display_credentials():
-                print("Here is a list of all your credentials")
+                print("This is a list of all your credentials")
                 print('\n')
 
                 for credential in display_credentials():
@@ -91,29 +91,29 @@ def main():
                 print('\n')
             else:
                 print('\n')
-                print("You dont seem to have any credentials saved yet")
+                print("You dont have any credentials saved yet")
                 print('\n')
 
         elif short_code == 'fc':
 
-            print("Enter the number you want to search for")
+            print("Enter the email you want to search for")
 
-            search_number = input()
-            if check_existing_credentials(search_number):
-                search_credential = find_credential(search_number)
+            search_email= input()
+            if check_existing_credentials(search_email):
+                search_credential = find_credential(search_email)
                 print(f"{search_credential.first_name} {search_credential.last_name}")
                 print('-' * 20)
 
-                print(f"password.......{search_credential.password}")
-                print(f"Email address.......{search_credential.email}")
+                print(f"Last name.......{search_credential.f_name}")
+                print(f"First name.......{search_credential.password}")
             else:
                 print("That credential does not exist")
 
         elif short_code == "ex":
-            print("Bye .......")
+            print("See you soon ..")
             break
         else:
-            print("I really didn't get that. Please use the short codes")
+            print("Please use the short codes provided")
 
 
 if __name__ == '__main__':
