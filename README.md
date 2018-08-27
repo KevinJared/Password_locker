@@ -12,7 +12,7 @@ Password locker is an application where a user can
 ## Setup
 # First clone this repo:
 
-* git clone https://github.com/kevinjared/Password_Locker.git
+* git clone https://github.com/KevinJared/Password_locker.git
 # navigate to the repo on your terminal
 cd Pass-Locker
 # Running the code
